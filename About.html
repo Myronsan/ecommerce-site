@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Product Details - Kicklift</title>
+    <title>About Us - Kicklift</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
@@ -38,76 +38,46 @@
       </div>
     </div>
 
-    <!-- ------------cart item details------------- -->
+    <!-- ---------------about page---------------- -->
 
-    <div class="small-container cart-page">
-      <table>
-        <tr>
-          <th>Product</th>
-          <th>Quantity</th>
-          <th>Subtotal</th>
-        </tr>
-        <tr>
-          <td>
-            <div class="cart-info">
-              <img src="images/tshirts/featured-tshirt1.jpg" />
-              <div>
-                <p>Yellow Vans Tshirt</p>
-                <small>Price: £50.00</small>
-                <br />
-                <a href="#">Remove</a>
-              </div>
-            </div>
-          </td>
-          <td><input type="number" value="1" /></td>
-          <td>£50.00</td>
-        </tr>
-        <tr>
-          <td>
-            <div class="cart-info">
-              <img src="images/tshirts/featured-tshirt2.jpg" />
-              <div>
-                <p>Yellow Vans Tshirt</p>
-                <small>Price: £50.00</small>
-                <br />
-                <a href="">Remove</a>
-              </div>
-            </div>
-          </td>
-          <td><input type="number" value="1" /></td>
-          <td>£50.00</td>
-        </tr>
-        <tr>
-          <td>
-            <div class="cart-info">
-              <img src="images/tshirts/featured-tshirt3.jpg" />
-              <div>
-                <p>Yellow Vans Tshirt</p>
-                <small>Price: £70.00</small>
-                <br />
-                <a href="">Remove</a>
-              </div>
-            </div>
-          </td>
-          <td><input type="number" value="1" /></td>
-          <td>£70.00</td>
-        </tr>
-      </table>
-      <div class="total-price">
-        <table>
-          <tr>
-            <td>Subtotal</td>
-            <td>£170</td>
-          </tr>
-          <tr>
-            <td>Tax</td>
-            <td>£35</td>
-          </tr>
-          <tr>
-            <td>Total</td>
-            <td>£205</td>
-          </tr>
-        </table>
+    <div class="aboutpage">
+      <div class="container">
+        <h2 class="title">About Us</h2>
+        <p>
+          Levi Strauss & Co. is a worldwide corporation organized into three
+          geographic divisions: Levi Strauss Americas (LSA), headquartered in
+          San Francisco; Levi Strauss Europe (LSE), based in Brussels; and Levi
+          Strauss Asia Pacific, Middle East and Africa (LSAMA), based in
+          Singapore. The company employs a staff of approximately 16,000 people
+          worldwide.
+        </p>
+        <br />
+        <p>
+          Strauss passed the company to his nephews, the sons of David Stern,
+          upon his death in 1902. Walter A. Haas, who married the daughter of
+          David's fourth son, Sigmund Stern, became president in 1928, and the
+          company remained under the ownership of the Stern-Haas family until
+          first going public in 1971. However, in 1985 the Haas family
+          recaptured ownership of the company, taking it private once again for
+          the next 34 years.[50][51] In February 2019, the company filed with
+          the U.S. Securities and Exchange Commission for an initial public
+          offering, to be traded on the New York Stock Exchange under the ticker
+          symbol LEVI.[52][53] Levi Strauss went public for the second time in
+          its history on March 21, 2019 at a price of $17 per share.
+        </p>
+        <br />
+        <p>
+          The company is also well known for promoting progressive causes. They
+          were one of the earliest private sector institutions to support LGBTQ
+          causes, and during the 2016 presidential campaign donated $1 million
+          to support immigration and LGBTQ rights. In 2018, CEO Chip Bergh
+          published an Op-ed in Fortune magazine speaking out against gun
+          violence.[54] Levis recorded 62% fall in sales due to Corona-virus.
+          Past few months went under lock-down which resulted in reduced
+          spending on clothes especially pants. According to Levis, the loss of
+          $364m was recorded. Levis cut down 700 office jobs which might help
+          them save $100m
+        </p>
       </div>
     </div>
 
@@ -161,6 +131,26 @@
         } else {
           menuItems.style.maxHeight = "0px";
         }
+      }
+    </script>
+
+    <!-- --------Js for toggle form-------------------- -->
+
+    <script>
+      var LoginForm = document.getElementById("LoginForm");
+      var RegForm = document.getElementById("RegForm");
+      var Indicator = document.getElementById("Indicator");
+
+      function register() {
+        RegForm.style.transform = "translateX(0px)";
+        LoginForm.style.transform = "translateX(0px)";
+        Indicator.style.transform = "translateX(100px)";
+      }
+
+      function login() {
+        RegForm.style.transform = "translateX(300px)";
+        LoginForm.style.transform = "translateX(300px)";
+        Indicator.style.transform = "translateX(0px)";
       }
     </script>
   </body>
